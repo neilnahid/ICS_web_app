@@ -1,0 +1,10 @@
+{
+  "overwrite": true,
+  "schema": "http://localhost:3001/graphql",
+  "documents": ["pages/**/*.tsx", "hooks/**/*", "components/**/*.tsx"],
+  "generates": {
+    "generated/graphql.ts": {
+      "plugins": ["typescript", "typescript-operations", "typed-document-node"]
+    }
+  }
+}

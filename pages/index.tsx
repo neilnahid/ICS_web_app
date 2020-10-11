@@ -1,15 +1,8 @@
-import Link from 'next/link';
-import Layout from '../components/Layout';
+import { useRouter } from 'next/dist/client/router';
 
-const IndexPage:React.FC = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js</h1>
-    <p>
-      <Link href="/about">
-        <a href="http://localhost:3000">About</a>
-      </Link>
-    </p>
-  </Layout>
-);
+const IndexPage: React.FC = () => {
+  if (typeof window !== 'undefined') useRouter().replace('/admin');
+  return <></>;
+};
 
 export default IndexPage;

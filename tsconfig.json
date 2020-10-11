@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "composite": true,
+    "incremental": true,
     "allowJs": true,
     "alwaysStrict": true,
     "esModuleInterop": true,
